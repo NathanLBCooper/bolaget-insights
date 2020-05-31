@@ -1,5 +1,6 @@
 SELECT 
-    CONCAT(rangestart, ' - ', rangestart + 99) AS "PriceBand",
+    CONCAT(rangestart, ' - ', rangestart + 99) AS "Price Band Text",
+    rangestart AS "Price Band Start",
     sekvalue AS "SEK Value"
 FROM (
     SELECT
